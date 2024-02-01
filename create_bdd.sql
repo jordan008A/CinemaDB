@@ -51,5 +51,6 @@ CREATE TABLE IF NOT EXISTS Users (
     name VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
     cinema_id INT NOT NULL,
+    is_admin BOOLEAN default 0,
     FOREIGN KEY (cinema_id) REFERENCES Cinemas(id)
 );

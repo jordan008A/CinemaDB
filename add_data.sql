@@ -42,7 +42,10 @@ INSERT INTO Bookings (reservedPlaces, show_id, price_id) VALUES
 (6, 5, 2),
 (12, 6, 3);
 
-INSERT INTO Users (name, password, cinema_id) VALUES
-('Admin Cinéma A', 'password123', 1),
-('Admin Cinéma B', 'password456', 2),
-('Admin Cinéma C', 'password789', 3);
+INSERT INTO Users (name, password, cinema_id, is_admin) VALUES
+('Admin Cinéma A', 'password123', 1, 1),
+('User Cinéma A', 'password123', 1, 0),
+('Admin Cinéma B', 'password456', 2, 1),
+('User Cinéma B', 'password456', 2, 0),
+('Admin Cinéma C', 'password789', 3, 1),
+('User Cinéma C', 'password789', 3, 0);
